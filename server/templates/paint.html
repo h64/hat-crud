@@ -1,0 +1,113 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<h1>Paint stuff</h1>
+
+<form method="POST" action="/paint">
+    <div id="grid">
+        <!-- x axis labels -->
+        <span></span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        
+        <span>1</span>
+        <input type="color" name="0" value="#333333">
+        <input type="color" name="1" value="#333333">
+        <input type="color" name="2" value="#333333">
+        <input type="color" name="3" value="#333333">
+        <input type="color" name="4" value="#333333">
+        <input type="color" name="5" value="#333333">
+        <input type="color" name="6" value="#333333">
+        <input type="color" name="7" value="#333333">
+
+        <span>2</span>
+        <input type="color" name="8" value="#333333">
+        <input type="color" name="9" value="#333333">
+        <input type="color" name="10" value="#333333">
+        <input type="color" name="11" value="#333333">
+        <input type="color" name="12" value="#333333">
+        <input type="color" name="13" value="#333333">
+        <input type="color" name="14" value="#333333">
+        <input type="color" name="15" value="#333333">
+        
+        <span>3</span>
+        <input type="color" name="16" value="#333333">
+        <input type="color" name="17" value="#333333">
+        <input type="color" name="18" value="#333333">
+        <input type="color" name="19" value="#333333">
+        <input type="color" name="20" value="#333333">
+        <input type="color" name="21" value="#333333">
+        <input type="color" name="22" value="#333333">
+        <input type="color" name="23" value="#333333">
+        
+        <span>4</span>
+        <input type="color" name="24" value="#333333">
+        <input type="color" name="25" value="#333333">
+        <input type="color" name="26" value="#333333">
+        <input type="color" name="27" value="#333333">
+        <input type="color" name="28" value="#333333">
+        <input type="color" name="29" value="#333333">
+        <input type="color" name="30" value="#333333">
+        <input type="color" name="31" value="#333333">
+        
+        <span>5</span>
+        <input type="color" name="32" value="#333333">
+        <input type="color" name="33" value="#333333">
+        <input type="color" name="34" value="#333333">
+        <input type="color" name="35" value="#333333">
+        <input type="color" name="36" value="#333333">
+        <input type="color" name="37" value="#333333">
+        <input type="color" name="38" value="#333333">
+        <input type="color" name="39" value="#333333">
+        
+        <span>6</span>
+        <input type="color" name="40" value="#333333">
+        <input type="color" name="41" value="#333333">
+        <input type="color" name="42" value="#333333">
+        <input type="color" name="43" value="#333333">
+        <input type="color" name="44" value="#333333">
+        <input type="color" name="45" value="#333333">
+        <input type="color" name="46" value="#333333">
+        <input type="color" name="47" value="#333333">
+        
+        <span>7</span>
+        <input type="color" name="48" value="#333333">
+        <input type="color" name="49" value="#333333">
+        <input type="color" name="50" value="#333333">
+        <input type="color" name="51" value="#333333">
+        <input type="color" name="52" value="#333333">
+        <input type="color" name="53" value="#333333">
+        <input type="color" name="54" value="#333333">
+        <input type="color" name="55" value="#333333">
+
+        <span>8</span>
+        <input type="color" name="56" value="#333333">
+        <input type="color" name="57" value="#333333">
+        <input type="color" name="58" value="#333333">
+        <input type="color" name="59" value="#333333">
+        <input type="color" name="60" value="#333333">
+        <input type="color" name="61" value="#333333">
+        <input type="color" name="62" value="#333333">
+        <input type="color" name="63" value="#333333">
+    </div>
+</form>
+
+<script>
+    "use strict"
+    var gridEl;
+    var pixelMatrix = []
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('paint script loaded')
+        gridEl = document.getElementById('grid')
+        gridEl.addEventListener('change', (e) => {
+            if (e.target === gridEl) return;
+            console.log(e.target)
+        })
+    })
+</script>
+{% endblock %}
