@@ -1,0 +1,10 @@
+export default [
+    '#FFCACA', '#FFE9CA', '#FFFFCA', '#CAFFCA', '#CAFFFF', '#CACAFF', '#E9CAFF', '#FFCAFF',
+    '#FFBDBD', '#FFE4BD', '#FFFFBD', '#BDFFBD', '#BDFFFF', '#BDBDFF', '#E4BDFF', '#FFBDFF',
+    '#FFACAC', '#FFDDAC', '#FFFFAC', '#ACFFAC', '#ACFFFF', '#ACACFF', '#DDACFF', '#FFACFF',
+    '#FF9797', '#FFD597', '#FFFF97', '#97FF97', '#97FFFF', '#9797FF', '#D597FF', '#FF97FF',
+    '#FF7D7D', '#FFCA7D', '#FFFF7D', '#7DFF7D', '#7DFFFF', '#7D7DFF', '#CA7DFF', '#FF7DFF',
+    '#FF5C5C', '#FFBD5C', '#FFFF5C', '#5CFF5C', '#5CFFFF', '#5C5CFF', '#BD5CFF', '#FF5CFF',
+    '#FF3333', '#FFAD33', '#FFFF33', '#33FF33', '#33FFFF', '#3333FF', '#AD33FF', '#FF33FF',
+    '#FF0000', '#FF9900', '#FFFF00', '#00FF00', '#00FFFF', '#0000FF', '#9900FF', '#FF00FF',
+]
